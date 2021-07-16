@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+<link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/animate.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+   <div class="container cc">
+    <a class="navbar-brand" href="index.html"><img src="images/dhamaal_poker.png" width="100"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+     <li><button class="my-btn d-none"> &nbsp;<i class=" fa fa-apple"></i> &nbsp;|  &nbsp;<i class="fa fa-windows"></i>  &nbsp;Get Desktop App</button></li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="#">How to play</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Promotions</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle ujj3 two" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore
+
+          </a>
+          <div class="dropdown-menu ss3" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">One</a>
+            <a class="dropdown-item" href="#">Two</a>
+            <a class="dropdown-item" href="#">Three</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle ujj4 three" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Download
+
+          </a>
+          <div class="dropdown-menu ss4" aria-labelledby="navbarDropdownMenuLink">
+      <a class="dropdown-item" href="#">One</a>
+            <a class="dropdown-item" href="#">Two</a>
+            <a class="dropdown-item" href="#">Three</a>
+          </div>
+        </li>
+
+
+
+
+
+ 
+      </ul>
+    </div>
+    </div>
+  
+  </nav> 
+
+
+  <!--banner-->
+<div class="banner">
+<img src="images/bh.png">
+</div>
+
+<div class="container-fluid">
+
+  <button class="my-btn log" data-btn="login" onclick="openForm(this)">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="my-btn log" data-btn="signup" onclick="openForm(this)" href="index.html?open=video">Signup</button>
+<div class="container">
+<div class="row upper">
+<div class="col-md-4 mtop-minus">
+<div class="colour-box colour-box--arrow">
+  <div class="colour-box__icon"> </div>
+ 
+  <h1 class="colour-box__title">7 Years</h1>
+  <p class="colour-box__text text-white">This is the text for the colour box module. More text in this box.</p>
+</div>
+</div>
+
+<div class="col-md-4 mtop-minus">
+<div class="colour-box colour-box--arrow">
+  <div class="colour-box__icon"></div>
+  <h1 class="colour-box__title">15 Cr+</h1>
+  <p class="colour-box__text text-white">This is the text for the colour box module. More text in this box.</p>
+</div>
+</div>
+
+
+<div class="col-md-4 mtop-minus">
+<div class="colour-box colour-box--arrow">
+  <div class="colour-box__icon"></div>
+  <h1 class="colour-box__title">12 Cr+</h1>
+  <p class="colour-box__text text-white">This is the text for the colour box module. More text in this box.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="container-fluid my-bag">
+<div class="container">
+<div class="row mt-5 p-3">
+<div class="col-md-12"><h2 class="text-center">Open With A Winning Hand</h2></div>
+
+<div class="col-md-6 mt-4 mb-5"><img src="images/hand1.jpg" class="img1" width="500"></div>
+<div class="col-md-6 mt-4 mb-5"><img src="images/hand2.jpg" class="img2" width="500"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="container">
+<div class="row mt-5">
+<div class="col-md-12"><h2 class="text-center">How To Play</h2><p class="text-center">New to poker? Not to worry! We have everything you need to begin your journey. Be sure to check out our poker school for more.</p></div>
+
+<div class="col-md-4 mt-4 mb-4"><img src="images/p1.png" width="350"><h4 class="mt-3 text-center">No Limit Hold'em &nbsp; &nbsp;<i class="fa fa-arrow-right"></i></h4></div>
+<div class="col-md-4 mt-4 mb-4"><img src="images/p2.png" width="350"><h4 class="mt-3 text-center">Pot Limit Omaha &nbsp; &nbsp;<i class="fa fa-arrow-right"></i></h4></div>
+<div class="col-md-4 mt-4 mb-4"><img src="images/p3.png" width="350"><h4 class="mt-3 text-center">Pineapple OFC Poker &nbsp; &nbsp;<i class="fa fa-arrow-right"></i></h4></div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid my-bag">
+<div class="container">
+<div class="row mt-5">
+<div class="col-md-12 mt-5"><h2 class="text-center">Join India's Biggest Tournaments</h2><p class="text-center">Maximum value, maximum action! Our tournaments feature some of the biggest guarantees and most accessible buy-ins, along with a number of variations that keep the game exciting..</p></div>
+
+
+<div class="col-md-12 mt-5"><img src="images/touna.jpg" class="img3" width="1100"></div>
+<div class="col-md-12 mt-5"><img src="images/touna2.jpg" class="img3" width="1100"></div>
+
+<div class="col-md-4 mt-5 mb-5"><img src="images/t1.jpg" class="tou"> </div>
+<div class="col-md-4 mt-5 mb-5"><img src="images/t2.jpg" class="tou tops"> </div>
+<div class="col-md-4 mt-5 mb-5"><img src="images/t3.jpg" class="tou tops"></div>
+</div>
+</div>
+</div>
+
+
+
+<section class="testimonial text-center">
+        <div class="container">
+
+           
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+<div class="container-fluid my-bag p-5">
+<div class="container green"style="border-radius:10px;">
+<div class="row">
+<div class="col-md-6"><h2 class="text-white mt-5">Join the Community</h2><p class="text-white">More than 1 million players choose PokerBaazi.com as the platform
+for their online poker gaming needs. Join our ever-growing
+community and discover what sets us apart.</p></div>
+<div class="col-md-6"><div class="social"><i class="fa fa-facebook fb"></i> <i class="fa fa-linkedin ld"></i> <i class="fa fa-youtube yu"></i> <i class="fa fa-twitter tw"></i>  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="container">
+<div class="row mb-3">
+<div class="col-md-12 text-center mt-5"><h2>Poker Game - Play Poker Online India</h2></div>
+
+<div class="col-md-6">
+  
+
+<div id="content">
+  <details>
+    <summary>What is Poker Game</summary>
+    <p>
+      Most Indians fondly remember summer afternoons spent with family, usually on a large bed, with cards strewn around and a charged game of rummy afoot. Card games have always been an indispensable part of the cultural fabric of India, and rummy has enjoyed being one of most loved!<br> <br>
+
+      A skill-based game, rummy has been a source of pure, unadulterated joy for the young, the old, men and women. A23 is the best platform to play rummy online, where lasting relationships are formed, and bonds are strengthened, across all generations.<br> <br>
+      
+      People no longer want to play rummy at home with a physical pack of cards. In today’s Internet age, A23 has adapted the game and brings to you the digital versions of the traditional 13 or 21 – card Indian rummy. This version can be easily played on your tablets, laptops, desktops, and mobile phones. Additionally, A23 Rummy enables you to play the game for real cash! Its exciting features will enchant you and leave you wanting more!<br> <br>
+      
+      You now have the opportunity to relive fond memories and create new ones to cherish down the road with A23’s plethora on online rummy games!
+    </p>
+  </details>
+  <details>
+    <summary>Play Poker Online - The Peoples’ Game</summary>
+    <p>
+      Card games have always captivated the interest of many. In the Indian card-game landscape, rummy has dominated many a family gathering and forged lifelong bonds. It is an interesting game with simple rules of forming sets and sequences that simultaneously challenge the players. It hones observation, memory, and analytical reasoning skills as well.
+      <br> <br>
+      While rummy has enjoyed immense popularity in India, the online version of the game has grabbed the attention of the youth, especially since it provides the opportunity to earn some real money.
+
+     <br> <br>  However, is it safe to play rummy online in India on A23?<br> <br>
+     It sure is! Read on to find out why.
+    </p>
+    
+
+  
+    
+  </details>
+  <details>
+    <summary>History of Indian Poker Game </summary>
+    <p>
+      Online rummy is legal. It is protected under the Constitution of India under Article 19[1](g) for being a game of skill. In fact, court rulings consider games of skill (like rummy) a business activity and treat it thus.<br><br>
+
+      The 1968 ruling of the Honourable Supreme Court of India states that Rummy is a skill-based cards game where success depends on the “mere skill” of the person, which cannot be regarded as “gambling.” However, the Indian states, including Sikkim, Telangana, Tamilnadu, Andhra Pradesh, Nagaland, Assam, Kerala and Odisha, are exempted from this law. Therefore, abiding by the law, A23 Rummy does not offer its Rummy games facilities to players located in any of the mentioned states.<br><br>
+      
+      Play online rummy games for cash and it’s completely legal in India. being a game of skill, Rummy does not fall under gambling and there is no element of ‘luck or fortune’ involved. Playing rummy games online for real cash is 100% legal in India.<br><br>
+      
+      While the apex court has ruled in the favour of the game, players from the following states are not allowed to play rummy for cash:<br><br>
+      
+      Playing rummy online is 100% Legal. As per Supreme Court's decision, it is absolutely legal to play rummy cash games online for free in India (except for the states of Andhra Pradesh, Assam, Kerala, Nagaland, Odisha, Sikkim, Tamil Nadu & Telangana).<br><br>
+      
+      The laws of these states are ambiguous regarding playing online rummy for cash. As a result, A23 cannot allow players living in these areas participate with money. They can, however, play the free games and can participate for money once the laws in these states become clearer or change.<br><br>
+    </p>
+  </details>
+  <details class="tangental">
+    <summary>Variants of Online Poker Game?</summary>
+    <p>
+      It is quite easy to learn how to play rummy online. Indian rummy can be played either on two player tables or six player tables with a single deck or with two decks of cards, respectively. Players sit around a table, picking and discarding cards when their turn comes. Cards can be picked from either a closed deck or an open deck. However, the discarded cards must be placed in the open deck.<br><br>
+
+      When playing rummy online, your objective is to defeat all other players at the table by making sequences and sets of cards first. You can play the free games on A23 to get a hang of it.<br><br>
+      
+      The objective of rummy is to arrange the 13 cards you’ve been dealt into sets and sequences. Each game requires you to make at least 2 sequences – one of which must be without a Joker (pure sequence), while the other one can use the Joker. The game commences with a toss that decides which player will make the first move. Remember: focus on making a pure sequence first, then the second sequence, followed by other sequences or sets.<br><br>
+      
+      A game with a single deck of cards moves rapidly where you can count the cards discarded by your opponent and create a strategy accordingly. With a game involving two decks, it becomes a little difficult. <br><br>
+    </p>
+  </details>
+
+
+
+  </div>
+
+
+
+
+  
+</div>
+
+
+
+
+<div class="col-md-6">
+  
+
+  <div id="content">
+    <details>
+      <summary>History of Poker?</summary>
+      <p>
+        The rules of playing rummy online do not differ much from the generic rummy rules for playing the offline form of the game. At A23, we adhere to the rules that govern the general Indian rummy that has been played for decades.
+<br><br>
+</p>
+        <h6>13 Card Rummy:</h6>
+       <span>The 13-card rummy is the traditional form of the game and involves two decks of cards, including one joker per deck. Aces are ranked the highest, and the order goes: 2 3 4 5 6 7 8 9 10 Jack Queen King Ace.
+        
+        The Ace card can be used either as a number card (1), or as a face card when making sets, like 1, 2, 3, or Queen, King, Ace.</span> <br><br>
+        
+       <h6> Scores Calculation:</h6>
+       <span> The players score is the total value of all the cards and that are not a part of a valid sequence and a set. The objective is to reduce your score to 0 by forming valid sequences & sets.
+        
+        The cards have values as follows: Face cards (A, K, Q, J) - 10 points. The value of the rest of the card are equal to their rank.</span><br><br>
+        
+        <h5>A few Important Rules to Follow Playing Rummy on A23:</h5>
+
+
+        <h6> Table:</h6>
+<span> Table is where a Game of rummy is played. Typically, one Game of rummy is played on one Table.</span><br><br>
+
+<h6>Deck of Cards:</h6>
+<span> A complete set of cards is called a Deck of cards. A Deck of cards consists of the following cards:</span> 
+<ul class="p-3">
+<li>52 cards - 4 Suits with 13 cards each</li>
+<li>1 Wild Card joker – Also called as a Paper Joker</li>
+</ul>
+
+<h6>Joker:</h6> 
+<span>All cards of the same rank and any suit as the card selected are considered jokers.</span><br><br>
+
+<h6>Round:</h6>
+<span>A Round is part of a Game that starts with Dealing the cards to each player and ends with a player making a successful Show or the prize being Split.</span><br><br>
+
+<h6>Sequence:</h6>
+<span>A sequence consists of three or more cards of the same suit in order.</span><br><br>
+
+<h6>Pure Sequence:</h6>
+<span>A pure sequence is a sequence without joker.</span><br><br>
+
+<h6>Impure Sequence:</h6>
+<span>Impure Sequences are sequences that can contain jokers.</span><br><br>
+
+<h6>First Life:</h6>
+<span>The first pure Sequence is called the first life.</span><br><br>
+
+<h6>Second Life:</h6>
+<span>The second Life can be a second pure sequence or the first impure sequence.</span><br><br>
+
+  <h6>Sets:</h6>
+  <span>Sets are a group of 3 or 4 cards with the same rank but different suits. Sets can contain jokers. Learn more</span><br><br>
+     
+    </details>
+
+
+    <details class="tangental">
+      <summary>Poker’s Hall of Fame</summary>
+      <p>
+        <h6>Points Rummy:</h6>
+       <span> Of all the variants, this variant moves the fastest. Points Rummy brings together the thrill of sped and the skill required to play rummy. Each game lasts for a single deal. This means, players get to play more games in a shorter period! Shorter games require a higher level of skill and keep the players on the edge of their seats!
+      </span> <br><br>
+
+
+       <h6>Pool Rummy:</h6>
+       <span> A spin-off of the traditional 13-card Indian rummy, players participating in Pool Rummy are required to pay an entry fee which goes towards the prize pool. When someone wins a deal, they are awarded zero points and the rest accumulated points are added to their score. Once a player’s score reaches the maximum limit (101 points or 201 points), they are eliminated from the game.
+        </span> <br><br>
+
+        <span>Also referred to as syndicate, in this rummy format the player who scores the least is declared the winner. We have three pool formats on A23 site, “101 pool”, “201 pool” and “Best of Three”.</span>
+        <br><br>
+        <h6>Deals Rummy:</h6>
+
+        <span>One of the most popular variants of the game, Deals Rummy is played with chips that are provided to each player at the beginning of each game. Deals Rummy is super exciting as in this format 2/3 deals or rounds are played between 2 players and the player that has lesser count at the end is declared the winner. There is no option of drop or middle drop in this game, however if one player does not play his or her cards on timely basis, the final score is calculated based on best of 3 or best of 2 or best of 3 grand and best of 2 grand.
+          </span><br><br>
+
+         <h6>Gun Shot: </h6>
+         <span>As the name suggests, this game is played at the speed of a gun shot as it lasts only for one deal and there is no middle drop allowed. The winning amount at the end of each game is calculated as total number of players on the table who lost the game plus winner’s entry amount after deduction site’s commission.</span>
+         <br><br>
+         <h6>Multi Table Tourneys:</h6>
+         <span>This format allows large number of players to participate in the game and is played by enjoying players at the table to carry out a competition. Read more</span><br><br>
+      </p>
+    </details>
+
+
+    <details>
+      <summary>Why PokerBaazi To Play Poker Online? </summary>
+      <p>
+        Winning a game always brings a rush of adrenaline. Real money as reward only intensifies the high. A23 Rummy’s online cash games are highly entertaining and can captivate you for hours. Join millions of players that play for cash and win cash rewards! <br><br>
+
+        If, however, you are skittish about playing for cash, A23 Rummy has free games as well, where you can learn and hone your skills! <br><br>
+        
+        A23’s rummy tournaments are the simplest and the best way to enjoy cash rummy games. However, tournaments and cash rummy games differ slightly. <br><br>
+      </p>
+      <h6>Rummy Tournaments vs Cash Games:</h6>
+
+      <ul class="p-3">
+        <li> While A23 Rummy hosts cash games and tournaments, both their structures are different from each other</li>
+        <li>Tournaments are played on multi-table and multi-player levels and all players go to the finish line</li>
+          <li>Cash games work on a prize pool, and the size of the pool depends on the number of people participating</li>
+            <li>Tournaments require a pre-registration to book your seat, start at a stipulated time, and can run for a while</li>
+      </ul>
+      <span>Read more about the various tournaments, cash games, and free games on A23 here!</span><br><br>
+
+      <h6>A23(Ace2Three)- Monthly Tournaments:</h6>
+<span>There are multiple tournaments organized on the site on almost daily basis, but the monthly ones tend to attract more and more players, due to the large winning amount placed at stake.</span><br><br>
+<ul class="p-3">
+  <li><b>T20 Knockout Bash: </b> In this tournament a huge amount of Rs.30 lacs is placed in the winning pool and the players can participate by paying a meager fee of Rs.50</li><br>
+    <li><b>Ace Ride:</b> This is indeed the most exciting of all monthly tournaments as the prize money here is Rs.50 lacs and the players can tournament is organized on Monday, Tuesday, Thursday, Friday and Sunday, daily at 4 p.m.</li><br>
+      <li><b>Rummy Rally:</b> This tournament is meant for the ones who want to experience real excitement as the monthly pool is of Rs.30 lacs and the game is played daily at 10 a.m.</li>
+
+</ul>
+    </details>
+    <details>
+      <summary>How Easy to Deposite and Withdraw cash On A23?</summary>
+      <p>
+        At A23 Rummy, we offer players with various options for easy deposits when they choose to play online rummy. You can make a deposit via various channels either on the website or on the app.<br><br>
+
+        While A23 offers players the opportunity to play online rummy for free, we also ensure that the financial transactions on the website or on the app are complete safe and secure. On opting to add cash to your account, you will be directed to a landing page with several payment options, including, but not limited to, credit and debit cards, net banking, and UPI mode of payment. Once you enter the amount you wish to deposit, you will be directed to a secure payment gateway.<br><br>
+        
+        A23 Rummy does not share any information entered on the website or app with third parties, ensuring absolute confidentiality of all user data.<br><br>
+        
+        Withdrawals from your account on A23 are just as easy. You can withdraw any amount from Rs.200 to Rs.10,000 in a single transaction. Withdrawals can be made in two ways – account transfer or cheque transfer. While the first two withdrawals are free, a minimal fee is levied from the third withdrawal.
+      </p>
+    </details>
+
+
+
+  
+    </div>
+  
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--footer-->
+
+<div class="container-fluid bgss p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6"><img src="images/dhamaal_poker.png" width="140" class="logg"></div>
+
+      <div class="col-md-6">
+<ul class="foot-text">
+  <li>Legality</li>&nbsp; &nbsp;
+   <li>Certification</li>&nbsp; &nbsp;
+  <li>Welfare </li>&nbsp; &nbsp;
+  <li>Gaming </li>&nbsp; &nbsp;
+  <li>FAQ </li>&nbsp; &nbsp;
+  <li>Blog</li>
+</ul>
+
+      </div>
+
+
+      <div class="col-md-6 mt-3"><i class="fa fa-android"></i> &nbsp;&nbsp;  <i class="fa fa-windows"></i>&nbsp;&nbsp;  <i class="fa fa-apple"></i>&nbsp;&nbsp;  <i class="fa fa-ios"></i></div>
+
+      <div class="col-md-6 mt-3">
+        <div class="social-links">
+          <a href="#"><i class="fa fa-google"></i></a> &nbsp;&nbsp; 
+          <a href="#"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp; 
+          <a href="#"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp; 
+          <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp; 
+        </div>
+
+      </div>
+
+      <div class="col-md-12 mt-4">
+        <h5 class="text-white">Approved by Major Banks of India</h5>
+      </div>
+        <span class="ico">
+      <div class="col-md-1 mt-3"><img src="images/gp.png" class="ims" ></div>&nbsp;&nbsp;
+
+
+      <div class="col-md-1 mt-3"><img src="images/pay.png" class="ims"></div>&nbsp;&nbsp;
+      <div class="col-md-1 mt-3"><img src="images/pu.png"class="imn" ></div>&nbsp;&nbsp;&nbsp;
+
+      <div class="col-md-1 mt-3"><img src="images/master.png" class="ims"></div>&nbsp;&nbsp;
+    </span>
+      <hr class="new">
+      <div class="row">
+<div class="col-6 mt-4">
+  <h5 class="text-white ujj" style="white-space: nowrap;font-size: 18px;">Privacy Policy | Terms & Conditions</h5></div>
+
+<div class="col-6 mt-4 my-c" style="position: relative;left:430px;"><h5 class="text-white"style="font-size:17px;">© 2021 Poker Dhamaal. All rights reserved.</h5></div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <div class="form-popup" id="myForm">  
+  <div class="container">
+    <div class="frame wow fadeInDown" data-dismiss="modal">
+      <div class="nav">
+        <ul class="links">
+          <span class="signin-active text-white"><a class="btn  btt" data-li="login">Sign in</a></span>
+          <span class="signup-inactive text-white"><a class="btn btt" data-button="video" data-li="signup">Sign up </a></span>
+        </ul>
+      </div>
+      <div ng-app ng-init="checked = false">
+  
+                  <form class="form-signin" action="" method="post" name="form">
+           <h5 class="text-center play">LOGIN AND PLAY</h5>
+            <input class="form-styling" type="text" name="username" placeholder="Username"/>
+          
+            <input class="form-styling" type="password" name="password" placeholder="Password"/>
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1" style="font-size: 13px;">
+    
+          Remember me</label>
+            <div class="btn-animate">
+              <a class="btn-signin">Login</a>
+        
+            </div>
+        
+    
+                  </form>
+          
+                
+                  <form class="form-signup" action="" method="post" name="form">
+            <h5 class="text-center play">	SIGNUP AND START WINNING</h5>
+              <div class="row">
+              <div class="col-md-12">
+           
+            <input class="form-styling" type="text" name="fullname" placeholder="Username"/>
+        </div><br>
+        
+        <div class="col-md-6">
+          
+            <input class="form-styling" type="Password" name="fullname" placeholder="Password"/><br>
+        </div>
+        
+        <div class="col-md-6">
+       
+            <input class="form-styling" type="password" name="fullname" placeholder="Confirm Password"/><br>
+        </div>
+            <div class="col-md-12">
+          
+            <input class="form-styling" type="text" name="mobile" placeholder="Mobile No"/>
+        </div>
+        
+            <div class="col-md-6">
+            <input type="checkbox" id="myCheck"  name="vehicle2" value="Bike">
+            <label for="myCheck" style="font-size: 13px;white-space:nowrap;">
+    
+          Have a promocode?</label>
+         </div>
+       
+               <div class="col-md-6 mt-2">
+                <input class="form-styling" type="text" name="code" id="udd" placeholder="Enter Code"/  style="width:122px!important;margin-left:40px;margin-top:-5px;">
+     </div>
+     
+     
+     <div class="col-md-12">
+             <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+            <label for="vehicle3" style="font-size: 13px;">
+    
+          I accept to the terms and conditionsand Privacy Policy.</label>
+    
+       </div>
+         
+       
+            <a  class="btn-signup text-white">Sign Up</a>
+        
+            </div>
+      
+                  </form>
+        
+
+        
+     
+  
+      
+
+  <div id="close"><a class="text-white" href="">X</a></div>
+  
+  </div></div>
+  </div>
+  </div>  
+
+
+
+
+
+
+  
+  <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+  
+
+      <!-- jQuery library -->
+      <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="bootstrap/js/wow.js"></script>
+
+<script>
+new WOW().init();
+</script>
+
+<script>
+  var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+</script>
+
+
+
+ 
+
+
+
+
+<script>
+  function myFunction() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck");
+    // Get the output text
+    var text = document.getElementById("text");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    
+    } else {
+      text.style.display = "none";
+    }
+  }
+      </script>
+  
+  
+  <script>
+  $(function() {
+    $(".btn").click(function() {
+      $(".form-signin").toggleClass("form-signin-left");
+      $(".form-signup").toggleClass("form-signup-left");
+      $(".frame").toggleClass("frame-long");
+      $(".signup-inactive").toggleClass("signup-active");
+      $(".signin-active").toggleClass("signin-inactive");
+      $(".forgot").toggleClass("forgot-left");   
+      $(this).removeClass("idle").addClass("active");
+    });
+  });
+  
+
+
+  </script>
+
+
+  <script>
+    function openForm(event) {
+		document.getElementById("myForm").style.display = "block";
+		if(event.getAttribute("data-btn") == 'login')
+		{
+			if(document.querySelector(`.signin-active`).classList.contains('signin-inactive'))document.querySelector(`a[data-li="login"]`).click();
+			return;
+		}
+		if(!document.querySelector(`.signup-inactive`).classList.contains('signin-active'))document.querySelector(`a[data-li="signup"]`).click();
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#close").click(function(){
+          $(".frame,#close").hide();
+          
+        });
+  
+        $(".my-btn ").click(function(){
+          $(".frame,#close").show();
+          
+        });
+        
+      });
+    </script>   
+ 
+
+	<script>
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("udd");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+	
+  } else {
+    text.style.display = "none";
+  }
+}
+		</script>
+		
+		<script>
+		$(document).ready(function(){
+  $("#myCheck").click(function(){
+    $("#udd").show();
+	
+  });
+  
+
+  
+});
+</script>
+
+
+
+
+
+  <script>
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+const param = getParameterByName('open') || '';
+if(param === 'video') document.querySelector(`button[data-button="video"]`).click();
+
+
+
+</script>
+
+
+
+
+<script>
+var linkClicked = document.getElementsByClassName('nav-link');
+var numClass = linkClicked.length;
+
+for (var i = 0; i < numClass; i++) {
+		linkClicked[i].addEventListener('click', function(){
+      var onTheMoment = document.getElementsByClassName('active');
+			onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
+			this.className += ' active';
+    }, false);
+	}
+</script>
+
+  <script>
+$(document).ready(function(){
+  $(".ujj2").click(function(){
+    $(".ss2").slideToggle();
+  });
+});
+
+
+</script>
+
+
+  <script>
+$(document).ready(function(){
+  $(".ujj3").click(function(){
+    $(".ss3").slideToggle();
+  });
+});
+
+
+</script>
+
+
+  <script>
+$(document).ready(function(){
+  $(".ujj4").click(function(){
+    $(".ss4").slideToggle();
+  });
+});
+
+
+</script>
+
+  <script>
+$(document).ready(function(){
+  $(".ujj5").click(function(){
+    $(".ss5").slideToggle();
+  });
+});
+
+
+</script>
+</body>
+</html>
